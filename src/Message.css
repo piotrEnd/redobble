@@ -1,0 +1,26 @@
+.stats {
+	display: flex;
+	margin: 0 auto;
+	padding: 0 5px;
+	width: 250px;
+	overflow: hidden;
+}
+
+.stats p span {
+	font-family: 'Fredoka One', cursive;
+}
+
+.stats p:nth-of-type(1) span,
+.stats p:nth-of-type(3) span {
+	color: #61dafb;
+}
+
+.stats p:nth-of-type(2) span {
+	color: #f44336;
+}
+
+.stats hr {
+	align-self: center;
+	height: 12px;
+	border: 1px dotted #61dafb;
+}

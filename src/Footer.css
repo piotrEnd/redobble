@@ -1,0 +1,40 @@
+footer {
+	width: 300px;
+	margin: 1.5rem auto;
+}
+
+footer:hover {
+	animation: swingVertical 1s ease;
+	animation-iteration-count: 1;
+}
+
+footer a {
+	text-decoration: none;
+	color: #61dafb;
+	transition: .2s;
+}
+
+footer a:hover {
+	color: black;
+}
+
+@keyframes swingVertical {
+	15% {
+		transform: translateY(6px);
+	}
+	30% {
+		transform: translateY(-6px);
+	}
+	50% {
+		transform: translateY(4px);
+	}
+	65% {
+		transform: translateY(-2px);
+	}
+	80% {
+		transform: translateY(2px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
