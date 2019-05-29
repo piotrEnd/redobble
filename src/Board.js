@@ -23,24 +23,19 @@ class Board extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 
-	matching = React.createRef();
-
 	random() {
 		return Math.floor(Math.random() * this.props.numIcons);
 	}
 
-	handleClick(e) {
-		let found = this.matching.current.attributes[1].value;
+	handleClick(e, matcher) {
 		let select = e.currentTarget.value;
-		console.log(found);
-		console.log(select);
 
 		const currentTime = Math.floor(Date.now() / 1000);
 		const resultTime = currentTime - this.state.timeStart;
 
-		if (found === select) {
+		if (matcher === select) {
 			this.setState((prevState) => ({
-				matcher: found,
+				matcher: matcher,
 				isFound: true,
 				timeStart: currentTime,
 				timeEnd: resultTime,
@@ -58,22 +53,16 @@ class Board extends Component {
 
 	render() {
 		mixIt();
+
 		const arr = [ ...icons ];
 		const matcher = arr.shift();
-
 		console.log(matcher);
 
 		const board1 = arr.splice(0, this.props.numIcons - 1);
 		board1.splice(this.random(), 0, matcher);
 
 		const first = board1.map((ico) => (
-			<button
-				key={ico}
-				value={ico}
-				onClick={this.handleClick}
-				matcher={matcher}
-				ref={this.matching}
-			>
+			<button key={ico} value={ico} onClick={(e) => this.handleClick(e, matcher)}>
 				<i className={`fas fa-${ico}`} />
 			</button>
 		));
@@ -82,13 +71,7 @@ class Board extends Component {
 		board2.splice(this.random(), 0, matcher);
 
 		const second = board2.map((ico) => (
-			<button
-				key={ico}
-				value={ico}
-				onClick={this.handleClick}
-				matcher={matcher}
-				ref={this.matching}
-			>
+			<button key={ico} value={ico} onClick={(e) => this.handleClick(e, matcher)}>
 				<i className={`fas fa-${ico}`} />
 			</button>
 		));
@@ -98,11 +81,7 @@ class Board extends Component {
 				<div className="card">{first}</div>
 				<Feedback isFound={this.state.isFound} timeEnd={this.state.timeEnd} />
 				<div className="card">{second}</div>
-				<Message
-					// matcher={matcher}
-					hits={this.state.hits}
-					missed={this.state.missed}
-				/>
+				<Message hits={this.state.hits} missed={this.state.missed} />
 			</main>
 		);
 	}
