@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/redobble/precache-manifest.dec7a42c7593433fb5e6c5a785836c89.js"
+  "/redobble/precache-manifest.6b65f8a3b46f34672eebf68ed85112aa.js"
 );
 
 self.addEventListener('message', (event) => {

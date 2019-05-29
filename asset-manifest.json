@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/redobble/static/css/main.c20f0796.chunk.css",
-    "main.js": "/redobble/static/js/main.e4e635a3.chunk.js",
-    "main.js.map": "/redobble/static/js/main.e4e635a3.chunk.js.map",
+    "main.css": "/redobble/static/css/main.4183352d.chunk.css",
+    "main.js": "/redobble/static/js/main.336a9300.chunk.js",
+    "main.js.map": "/redobble/static/js/main.336a9300.chunk.js.map",
     "runtime~main.js": "/redobble/static/js/runtime~main.146bf6e7.js",
     "runtime~main.js.map": "/redobble/static/js/runtime~main.146bf6e7.js.map",
-    "static/js/2.8d89fcb1.chunk.js": "/redobble/static/js/2.8d89fcb1.chunk.js",
-    "static/js/2.8d89fcb1.chunk.js.map": "/redobble/static/js/2.8d89fcb1.chunk.js.map",
+    "static/js/2.a1351bd8.chunk.js": "/redobble/static/js/2.a1351bd8.chunk.js",
+    "static/js/2.a1351bd8.chunk.js.map": "/redobble/static/js/2.a1351bd8.chunk.js.map",
     "index.html": "/redobble/index.html",
-    "precache-manifest.dec7a42c7593433fb5e6c5a785836c89.js": "/redobble/precache-manifest.dec7a42c7593433fb5e6c5a785836c89.js",
+    "precache-manifest.6b65f8a3b46f34672eebf68ed85112aa.js": "/redobble/precache-manifest.6b65f8a3b46f34672eebf68ed85112aa.js",
     "service-worker.js": "/redobble/service-worker.js",
-    "static/css/main.c20f0796.chunk.css.map": "/redobble/static/css/main.c20f0796.chunk.css.map"
+    "static/css/main.4183352d.chunk.css.map": "/redobble/static/css/main.4183352d.chunk.css.map"
   }
 }
