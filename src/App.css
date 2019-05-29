@@ -2,3 +2,8 @@
 	text-align: center;
 	font-family: 'Nunito', sans-serif;
 }
+
+::selection {
+	background: #61dafb;
+	color: white;
+}

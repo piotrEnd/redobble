@@ -17,6 +17,7 @@ class Board extends Component {
 			isFound: 'initial',
 			timeStart: Math.floor(Date.now() / 1000),
 			timeEnd: '',
+			timeEndCorrect: [],
 			hits: 0,
 			missed: 0
 		};
@@ -38,7 +39,7 @@ class Board extends Component {
 				matcher: matcher,
 				isFound: true,
 				timeStart: currentTime,
-				timeEnd: resultTime,
+				timeEndCorrect: [ ...prevState.timeEndCorrect, resultTime ],
 				hits: prevState.hits + 1
 			}));
 		} else {
@@ -81,7 +82,11 @@ class Board extends Component {
 				<div className="card">{first}</div>
 				<Feedback isFound={this.state.isFound} timeEnd={this.state.timeEnd} />
 				<div className="card">{second}</div>
-				<Message hits={this.state.hits} missed={this.state.missed} />
+				<Message
+					hits={this.state.hits}
+					missed={this.state.missed}
+					avgArr={this.state.timeEndCorrect}
+				/>
 			</main>
 		);
 	}

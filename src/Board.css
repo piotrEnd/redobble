@@ -13,7 +13,6 @@ button {
 }
 
 button:hover {
-	background: black;
 	background: #61dafb;
 	opacity: .75;
 	color: white;

@@ -3,7 +3,12 @@ import './Message.css';
 
 class Message extends Component {
 	render() {
-		const { hits, missed } = this.props;
+		const { hits, missed, avgArr } = this.props;
+
+		let averageTime = avgArr.reduce((acc, cur) => {
+			return acc + cur;
+		}, 0);
+		averageTime = (averageTime / avgArr.length).toFixed(1).replace(/\.?0*$/, '');
 
 		let rate;
 		if (hits > 0 || missed > 0) {
@@ -15,13 +20,14 @@ class Message extends Component {
 				<p>
 					Hits: <span>{hits}</span>
 				</p>
-				<hr />
 				<p>
 					Missed: <span>{missed}</span>
 				</p>
-				<hr />
 				<p>
 					Rate: <span>{rate}%</span>
+				</p>
+				<p>
+					Average response time: <span>{avgArr.length === 0 ? 'n/a' : `${averageTime}s`}</span>
 				</p>
 			</div>
 		);

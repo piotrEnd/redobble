@@ -1,6 +1,6 @@
 footer {
 	width: 300px;
-	margin: 1.5rem auto;
+	margin: 2rem auto;
 }
 
 footer:hover {
@@ -11,7 +11,7 @@ footer:hover {
 footer a {
 	text-decoration: none;
 	color: #61dafb;
-	transition: .2s;
+	transition: 1s;
 }
 
 footer a:hover {

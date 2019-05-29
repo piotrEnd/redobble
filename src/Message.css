@@ -2,12 +2,13 @@
 	display: flex;
 	margin: 0 auto;
 	padding: 0 5px;
-	width: 250px;
-	overflow: hidden;
+	width: 300px;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
 .stats p span {
-	font-family: 'Fredoka One', cursive;
+	font-weight: bold;
 }
 
 .stats p:nth-of-type(1) span,
@@ -19,8 +20,10 @@
 	color: #f44336;
 }
 
-.stats hr {
-	align-self: center;
-	height: 12px;
-	border: 1px dotted #61dafb;
+.stats p {
+	margin: 0 8px;
+}
+
+.stats p:nth-of-type(4) {
+	margin-top: 0;
 }
