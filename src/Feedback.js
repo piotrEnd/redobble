@@ -1,30 +1,21 @@
 import React, { Component } from 'react';
+import './Feedback.css';
 
 class Feedback extends Component {
 	render() {
-		let isFound = {
-			fontFamily: 'Fredoka One',
-			textTransform: 'uppercase',
-			color: '#f44336'
-		};
+		const { isFound, timeEnd } = this.props;
 
-		if (this.props.isFound) {
-			isFound.color = ' #61dafb';
-		}
-
-		if (this.props.isFound === 'initial') {
+		if (isFound === 'initial') {
 			return null;
 		} else {
 			return (
 				<div style={{ lineHeight: '0' }}>
-					<h2 style={isFound}>{this.props.isFound ? 'nicely done' : 'bad deal'}</h2>
+					<h2 className={`feedback ${isFound ? 'correct' : 'wrong'}`}>
+						{isFound ? 'nicely done' : 'bad deal'}
+					</h2>
 					<p>
-						{this.props.isFound ? 'in ' : 'took '}
-						{this.props.timeEnd > 1 ? (
-							`${this.props.timeEnd} seconds`
-						) : (
-							`${this.props.timeEnd} second`
-						)}
+						{isFound ? 'in ' : 'took '}
+						{timeEnd > 1 ? `${timeEnd} seconds` : `${timeEnd} second`}
 					</p>
 				</div>
 			);

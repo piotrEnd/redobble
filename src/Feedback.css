@@ -1,0 +1,12 @@
+.feedback {
+	font-family: 'Fredoka One';
+	text-transform: uppercase;
+}
+
+.correct {
+	color: #61dafb;
+}
+
+.wrong {
+	color: #f44336;
+}
