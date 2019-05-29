@@ -7,17 +7,18 @@ class Message extends Component {
 
 		let rate;
 		if (hits > 0 || missed > 0) {
-			rate = (hits / (hits + missed)).toFixed(2) * 100;
+			rate = Math.round((hits / (hits + missed)).toFixed(2) * 100);
+			console.log(typeof rate);
 		}
 
 		return (
 			<div className="stats">
 				<p>
-					Hits: <span>{this.props.hits}</span>
+					Hits: <span>{hits}</span>
 				</p>
 				<hr />
 				<p>
-					Missed: <span>{this.props.missed}</span>
+					Missed: <span>{missed}</span>
 				</p>
 				<hr />
 				<p>
