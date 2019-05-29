@@ -7,8 +7,7 @@ class Message extends Component {
 
 		let rate;
 		if (hits > 0 || missed > 0) {
-			rate = Math.round((hits / (hits + missed)).toFixed(2) * 100);
-			console.log(typeof rate);
+			rate = (hits / (hits + missed) * 100).toFixed(1).replace(/\.?0*$/, '');
 		}
 
 		return (
