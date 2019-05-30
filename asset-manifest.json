@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/redobble/static/css/main.4183352d.chunk.css",
-    "main.js": "/redobble/static/js/main.336a9300.chunk.js",
-    "main.js.map": "/redobble/static/js/main.336a9300.chunk.js.map",
+    "main.css": "/redobble/static/css/main.0557d86f.chunk.css",
+    "main.js": "/redobble/static/js/main.4985a3fa.chunk.js",
+    "main.js.map": "/redobble/static/js/main.4985a3fa.chunk.js.map",
     "runtime~main.js": "/redobble/static/js/runtime~main.146bf6e7.js",
     "runtime~main.js.map": "/redobble/static/js/runtime~main.146bf6e7.js.map",
     "static/js/2.a1351bd8.chunk.js": "/redobble/static/js/2.a1351bd8.chunk.js",
     "static/js/2.a1351bd8.chunk.js.map": "/redobble/static/js/2.a1351bd8.chunk.js.map",
     "index.html": "/redobble/index.html",
-    "precache-manifest.6b65f8a3b46f34672eebf68ed85112aa.js": "/redobble/precache-manifest.6b65f8a3b46f34672eebf68ed85112aa.js",
+    "precache-manifest.901f44db8f4112f3859a0d879d3319ed.js": "/redobble/precache-manifest.901f44db8f4112f3859a0d879d3319ed.js",
     "service-worker.js": "/redobble/service-worker.js",
-    "static/css/main.4183352d.chunk.css.map": "/redobble/static/css/main.4183352d.chunk.css.map"
+    "static/css/main.0557d86f.chunk.css.map": "/redobble/static/css/main.0557d86f.chunk.css.map"
   }
 }
