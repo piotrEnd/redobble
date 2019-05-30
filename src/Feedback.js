@@ -3,7 +3,7 @@ import './Feedback.css';
 
 class Feedback extends Component {
 	render() {
-		const { isFound, timeEnd } = this.props;
+		const { isFound, timeEnd, avgArr } = this.props;
 
 		if (isFound === 'initial') {
 			return null;
@@ -14,8 +14,9 @@ class Feedback extends Component {
 						{isFound ? 'nicely done' : 'bad deal'}
 					</h2>
 					<p>
-						{isFound ? 'in ' : 'took '}
-						{timeEnd > 1 ? `${timeEnd} seconds` : `${timeEnd} second`}
+						{' '}
+						&#8943; {isFound ? `in  ${avgArr[avgArr.length - 1]}s` : `took ${timeEnd}s`}{' '}
+						&#8943;
 					</p>
 				</div>
 			);

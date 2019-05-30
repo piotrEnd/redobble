@@ -27,7 +27,8 @@ class Message extends Component {
 					Rate: <span>{rate}%</span>
 				</p>
 				<p>
-					Average response time: <span>{avgArr.length === 0 ? 'n/a' : `${averageTime}s`}</span>
+					Average correct response:{' '}
+					<span>{avgArr.length === 0 ? 'n/a' : `${averageTime}s`}</span>
 				</p>
 			</div>
 		);

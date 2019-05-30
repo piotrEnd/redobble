@@ -80,7 +80,11 @@ class Board extends Component {
 		return (
 			<main className="main">
 				<div className="card">{first}</div>
-				<Feedback isFound={this.state.isFound} timeEnd={this.state.timeEnd} />
+				<Feedback
+					isFound={this.state.isFound}
+					timeEnd={this.state.timeEnd}
+					avgArr={this.state.timeEndCorrect}
+				/>
 				<div className="card">{second}</div>
 				<Message
 					hits={this.state.hits}
